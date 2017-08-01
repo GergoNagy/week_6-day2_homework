@@ -21,4 +21,8 @@ public class Photographer {
   public void addCamera(Camera camera){
     this.bag.add(camera);
   }
+
+  public void removeCamera(){
+    this.bag.clear();
+  }
 }
