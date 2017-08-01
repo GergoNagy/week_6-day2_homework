@@ -26,11 +26,10 @@ public class Photographer {
     this.bag.clear();
   }
 
-  public String allCameraInfo(){
+  public void allCameraInfo(){
     for (int i=0 ;i < bag.size() ; i++ ) {
       System.out.println(bag.get(i));
     }
-    return bag.printDetails();
   }
 
 }
