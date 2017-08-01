@@ -1,5 +1,5 @@
 public interface Printable {
 
-  String printDetails();
+  String printDetails(String brand, String type);
   
 }
