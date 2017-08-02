@@ -32,10 +32,10 @@ public class PhotographerTest{
     assertEquals(0, photographer.cameraCount());
   }
 
-  // @Test
-  // public void canShowCameraInfos(){
-  //   cameraaa = photographer.addCamera(digitalCamera);
+  @Test
+  public void canPrint(){
+    photographer.addCamera(digitalCamera);
+    assertEquals("I have a Nikon, D7100", photographer.allCameraInfo());
+  }
 
-  //   System.out.println(cameraa());
-  // }
 }

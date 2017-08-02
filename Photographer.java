@@ -26,10 +26,18 @@ public class Photographer {
     this.bag.clear();
   }
 
-  public void allCameraInfo(){
+  public String allCameraInfo(){
+    String details = "";
+
     for (int i=0 ;i < bag.size() ; i++ ) {
-      System.out.println(bag.get(i));
+      details += this.bag.get(i).printDetails();
+    // for (Printable camera : this.bag){
+    //   details += camera.printDetails() + "\n";
     }
+
+    return details;
   }
+
+
 
 }
